@@ -85,7 +85,7 @@ bash
 Copy
 Edit
 cd Backend
-npm start
+npm run dev
 7. Run the Frontend Server
 Open a new terminal window and run:
 
