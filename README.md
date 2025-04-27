@@ -17,68 +17,60 @@ Delete unwanted blog posts
 
 Users can comment on blog posts
 
-Admins can moderate comments (approve, delete)
+Admins can moderate (approve or delete) comments
 
 👤 User Profiles
 
 Users can upload and update their profile pictures
 
-🔒 Authentication and Authorization 
+🔒 Authentication and Authorization
 
 Secure login for Admins
 
-Session management
+Session management using JWT
 
 📸 Image Uploads
 
 Upload images for blog posts
 
-Upload profile images for users
+Upload and update profile images for users
 
 🛠️ Tech Stack
 Frontend: React.js / HTML / CSS / JavaScript
 
 Backend: Node.js / Express.js
 
-Database: MongoDB 
+Database: MongoDB
 
-Authentication: JWT 
+Authentication: JWT (JSON Web Tokens)
 
-File Uploads: Multer 
-
+File Uploads: Multer (for handling images)
 
 🚀 Setup Instructions
-Clone the repository
-
+1. Clone the Repository
 bash
 Copy
 Edit
 git clone https://github.com/mohdd9930/blog-web-page-with-admin-panel.git
-Navigate into the project folder
-
+2. Navigate into the Project Folder
 bash
 Copy
 Edit
 cd blog-web-page-with-admin-panel
-Install Frontend Dependencies
-
-bash
-Copy
-Edit
-cd Frontend
-npm install
-npm run dev
-
+3. Install Backend Dependencies
 bash
 Copy
 Edit
 cd Backend
 npm install
-npm run dev
-
-Create a .env file in the Backend folder.
-
-Add variables like:
+4. Install Frontend Dependencies
+bash
+Copy
+Edit
+cd ../Frontend
+npm install
+5. Set Environment Variables
+Create a .env file inside the Backend folder and add the following:
 
 bash
 Copy
@@ -86,10 +78,19 @@ Edit
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-Run the Frontend and Backend
+Replace your_mongodb_connection_string and your_jwt_secret with your actual values.
 
-# In Backend folder
+6. Run the Backend Server
+bash
+Copy
+Edit
+cd Backend
 npm start
+7. Run the Frontend Server
+Open a new terminal window and run:
 
-# In Frontend folder
+bash
+Copy
+Edit
+cd Frontend
 npm start
